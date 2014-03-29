@@ -1,0 +1,10 @@
+# Unity
+Temp
+Library
+ 
+# MonoDevelop
+*.sln
+*.userprefs
+*.csproj
+*.unityproj
+*.pidb
