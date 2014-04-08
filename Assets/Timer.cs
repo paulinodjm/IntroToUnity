@@ -5,6 +5,7 @@ using System;
 /// <summary>
 /// Base class for each timer
 /// </summary>
+[AddComponentMenu("IntroToUnity/Timer")]
 public class Timer : MonoBehaviour 
 {
     /// <summary>

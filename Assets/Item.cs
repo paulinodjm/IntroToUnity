@@ -3,6 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Renderer))]
 [RequireComponent(typeof(Timer))]
+[AddComponentMenu("IntroToUnity/Item")]
 public class Item : MonoBehaviour
 {
     public int Weight = 1;
