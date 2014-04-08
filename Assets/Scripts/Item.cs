@@ -13,6 +13,7 @@ public class Item : MonoBehaviour
     protected void Start()
     {
         _timer = GetComponent<Timer>();
+        _timer.enabled = false;
         _timer.Triggered += OnTimerEnded;
     }
 
