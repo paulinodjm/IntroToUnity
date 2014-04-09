@@ -4,8 +4,7 @@ using System.Collections;
 [AddComponentMenu("IntroToUnity/PlayerController")]
 public class PlayerController : MonoBehaviour
 {
-    public GameObject HUD;
-
+    public GameObject HUD { get; set; }
     public int Score { get; set; }
 
     private Animator _animator;
@@ -15,8 +14,10 @@ public class PlayerController : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _characterController = GetComponent<CharacterController>();
-        
+
         if (_animator == null || _characterController == null) enabled = false;
+
+        HUD = GameObject.Find("HUD");
     }
 
     void Update()
